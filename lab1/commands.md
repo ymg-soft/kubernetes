@@ -24,6 +24,9 @@ Resultat:
 ``Taints:             node-role.kubernetes.io/master:NoSchedule``  
 ``Taints:   <none>``  
 ``Taints:             <none>``  
-``Taints:             <none>``  
-
+``Taints:             <none>``   
+Commande pour enlever le Taint, attention a caractere - a la fin de la ligne  
 ``kubectl taint nodes --all node-role.kubernetes.io/master-``
+  
+Verifier si le DNS et Calico pods est ok  
+``kubectl get pods --all-namespaces``  
