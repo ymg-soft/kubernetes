@@ -13,6 +13,12 @@ Vous pouvez mettre à jour des objets API  avec la commande **patch** et passer 
 Si la configuration comporte des champs *ressource* qui ne peuvent pas être mis à jour une fois initialisés, une mise à jour "forcée" peut être effectuée.
 en utilisant l'option ``replace --force``. Cela supprime d'abord, puis recrée une ressource.
 
-
 ``kubectl replace -f second_with_expose.yaml``  
- 
+    
+Voir le mise a jour en verifier la colonne AGE    
+
+``kubectl get deploy,pod``
+  
+Relancer l'expose  
+
+``kubectl expose deployment/nginx``
