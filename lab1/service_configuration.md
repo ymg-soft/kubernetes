@@ -2,7 +2,7 @@
 ## Commandes de base
 
 ``kubectl get svc nginx``  
-Attention the cluster-ip n'est pas le endpoint. Calico est le cluster IF a partir
+Attention the cluster-ip n'est pas le endpoint. Calico est le cluster-IP a partir
 duquel le endpoint est tenu par le *kubelet* et *kube-proxy*
    
 ``kubectl get ep nginx``  
