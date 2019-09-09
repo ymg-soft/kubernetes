@@ -1,3 +1,7 @@
+# Resources_limits
+
+## Basic commands
+
 Nous allons continuer de travailler avec notre cluster sur les aspects *resource limits*, 
 plus avec les *namespaces* et aussi des *deployment* plus complexes. 
 
