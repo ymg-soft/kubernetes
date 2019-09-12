@@ -1,0 +1,29 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hme-pic
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubia-manual
+  namespace: hme-pic
+  labels: 
+    app: kubia
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubia
+  template: 
+    metadata:
+      labels:
+        app: kubia
+    spec:
+      containers:
+      - name: kubia
+        image: systemdevformations/kubia
+        ports:
+        - containerPort: 8080
+          protocol: TCP
