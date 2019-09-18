@@ -1,5 +1,6 @@
-# lab3
-Build l'image kubia  
+# Lab-init 
+## Rappel Docker  
+Build l'image kubia    
 ``docker build -t kubia .``
 Check  
 ``docker images``  
@@ -17,6 +18,12 @@ Stopper le container
 ``docker stop kubia-container``  
 Detruire le container  
 ``docker rm kubia-container``  
+## Create a replication controller    
+``kubectl run kubia --image=systemdevformations/kubia --port=8080 --generator=run/v1`` 
+ 
+   
+
+
 
  
 
