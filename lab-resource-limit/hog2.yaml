@@ -1,14 +1,11 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-  creationTimestamp: null
-  generation: 1
   labels:
     app: hog
   name: hog
-  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/hog
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -23,7 +20,6 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: hog
     spec:
@@ -54,4 +50,3 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
-status: {}
